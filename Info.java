@@ -1,4 +1,3 @@
-
 public class Info
 {
     private String name;
@@ -6,6 +5,7 @@ public class Info
     private String email;
     private String phone;
 
+    // Constructor to initialize the Info object with user details
     public Info(String name, int age, String email, String phone) 
     {
         this.name = name;
@@ -14,22 +14,22 @@ public class Info
         this.phone = phone;
     }
 
-    public String getName() 
+    public String getName() // Getter for name
     {
         return name;
     }
 
-    public int getAge() 
+    public int getAge() // Getter for age
     {
         return age;
     }
 
-    public String getEmail() 
+    public String getEmail() // Getter for email
     {
         return email;
     }
 
-    public String getPhone() 
+    public String getPhone() // Getter for phone number
     {
         return phone;
     }
