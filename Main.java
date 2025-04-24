@@ -5,12 +5,14 @@ public class Main
 {
     public static void main(String[] args) 
     {
+        // Create an ArrayList to store user information
         ArrayList<Info> personal_info = new ArrayList<Info>();
         Scanner input = new Scanner(System.in);
 
         boolean new_user = true;
         while (new_user) 
         {
+            // Prompt the user for their information
             try
             {
                 System.out.println("Enter your name: ");
@@ -44,10 +46,16 @@ public class Main
                     new_user = false;
                 }
             } 
+            // Handle exceptions for invalid input
             catch (InvalidInputException e) 
             {
                 System.out.println("Validation error: " + e.getMessage());
                 System.out.println("Please try again.");
+            }
+            // Handle exceptions for invalid age input
+            catch (NumberFormatException e) 
+            {
+                System.out.println("Invalid input. Please enter a valid number for age.");
             }
         }
     }
