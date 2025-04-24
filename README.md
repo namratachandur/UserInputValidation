@@ -1,6 +1,5 @@
 # UserInputValidation
 
-
 This program asks a user to enter their name, age, email address and phone number.
 
 It runs a check on each data point and validates it before adding the data to an ArrayList.
