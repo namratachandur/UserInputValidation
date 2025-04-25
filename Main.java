@@ -38,6 +38,7 @@ public class Main
                 }
                 else if (response.equalsIgnoreCase("no"))
                 {
+                    System.out.println("Exiting the program. Thank you!");
                     new_user = false;
                 }
                 else
@@ -57,6 +58,16 @@ public class Main
             {
                 System.out.println("Invalid input. Please enter a valid number for age.");
             }
+        }
+
+        // Print the user information
+        System.out.println("User Information:");
+        for (Info info : personal_info) 
+        {
+            System.out.println("Name: " + info.getName());
+            System.out.println("Age: " + info.getAge());
+            System.out.println("Email: " + info.getEmail());
+            System.out.println("Phone Number: " + info.getPhone());
         }
     }
 }
